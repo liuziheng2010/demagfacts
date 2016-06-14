@@ -1,4 +1,0 @@
-
-      [console_scripts]
-      demagfacts=demagfacts.scripts.cli:cli
-      
