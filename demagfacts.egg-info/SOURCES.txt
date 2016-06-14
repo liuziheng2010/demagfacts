@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+demagfacts/__init__.py
+demagfacts.egg-info/PKG-INFO
+demagfacts.egg-info/SOURCES.txt
+demagfacts.egg-info/dependency_links.txt
+demagfacts.egg-info/entry_points.txt
+demagfacts.egg-info/not-zip-safe
+demagfacts.egg-info/requires.txt
+demagfacts.egg-info/top_level.txt
+demagfacts/scripts/__init__.py
+demagfacts/scripts/cli.py
