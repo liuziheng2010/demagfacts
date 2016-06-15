@@ -1,4 +1,4 @@
-![How do magnets work?](julianirwin.github.com/demagfacts/cover.jpg)
+![How do magnets work?](/cover.jpg)
 
 # Install #
   - Clone to your computer and open the directory.
