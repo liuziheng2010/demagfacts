@@ -1,3 +1,5 @@
+![How do magnets work?](julianirwin.github.com/demagfacts/cover.jpg)
+
 # Install #
   - Clone to your computer and open the directory.
   - `python3 setup.py install`
