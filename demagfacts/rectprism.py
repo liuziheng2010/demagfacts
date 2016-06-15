@@ -1,7 +1,8 @@
 from math import pi, e, log, atan, sqrt
+from .helpers import u0
 
 
-def rect_prism(a, b, c):
+def dz(a, b, c):
     """Compute Dz of a rectangular prism.
 
     Origin lies at the center of the prism. The prism therefore takes up
@@ -20,6 +21,20 @@ def rect_prism(a, b, c):
                      _E(a, b, c) +
                      _F(a, b, c) +
                      _G(a, b, c))
+
+
+def energy(a, b, c, msat):
+    """Compute the self energy for a rectangular prism magnetized in the c 
+    direction.
+
+    Args:
+        a, b, c (float):    Half lengths of the x, y, z edges respectively
+
+        msat (float):       Saturation magnetization of the FM in Tesla. If
+                            you have magnetization in A/m just multiply by
+                            u0 (magnetic constant).
+    """
+    return u0/2 * msat**2 * dz(a, b, c)
 
 
 def _R(a, b, c):
