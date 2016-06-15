@@ -1,5 +1,5 @@
 from nose.tools import assert_equal, assert_is_not_none, assert_almost_equal
-from demagfacts import rect_prism
+from demagfacts import rectprism
 
 # table for spheroid
     # table = ((2.0, 0.17356),
@@ -15,7 +15,7 @@ from demagfacts import rect_prism
 
 
 def test_cube():
-    assert_almost_equal(rect_prism(1., 1., 1.), 1.0/3.0)
+    assert_almost_equal(rectprism.dz(1., 1., 1.), 1.0/3.0)
 
 def test_paper_table():
     table = ((2.0, 0.19832),
@@ -29,4 +29,4 @@ def test_paper_table():
              (10.0, 0.045731),
              (11.0, 0.041705))
     for (p, Dz) in table:
-        yield assert_almost_equal, rect_prism(1.0, 1.0, p), Dz, 5
+        yield assert_almost_equal, rectprism.dz(1.0, 1.0, p), Dz, 5
