@@ -34,7 +34,7 @@ def energy(a, b, c, msat):
                             you have magnetization in A/m just multiply by
                             u0 (magnetic constant).
     """
-    return u0/2 * msat**2 * dz(a, b, c)
+    return msat**2 / (2*u0) * dz(a, b, c)
 
 
 def _R(a, b, c):
